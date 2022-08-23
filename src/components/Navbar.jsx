@@ -20,13 +20,8 @@ function NavBar() {
   const [contactIntersecting , setContactIntersecting] = useState(false);
 
 
-  window.addEventListener("load", () => {
-  if(screen.width < 1030){
-    setAboutIntersecting(true);
-    setProjectsIntersecting(true);
-    setContactIntersecting(true);
-  }
 
+  window.addEventListener("load", () => {
     const sectionOne = document.querySelector('#About-Me');
 const options = { threshold: screen.width > 1030 ? 1 : 0.3};
 
@@ -197,7 +192,7 @@ observer.observe(sectionOne);
       >
         <li
           className={
-            liActiveId === "Homes"
+            liActiveId === "Home"
               ? "Menu-li-active nav-hover-anim"
               : "nav-hover-anim"
           }
@@ -253,16 +248,16 @@ observer.observe(sectionOne);
           <Home />
         </div>
         <AnimatePresence exitBeforeEnter><motion.div
-        initial={{opacity: 1 }}
-        animate={{opacity: aboutIntersecting ? 1 : (screen.width < 1030 ? 1 : 0) }}
-         exit={{ opacity: 1 }}
+        initial={{opacity: 0 }}
+        animate={{opacity: aboutIntersecting ? 1 : 0 }}
+         exit={{ opacity: 0 }}
          transition={{ duration: screen.width < 1030 ? 1 : 0.1 , ease: 'easeInOut'}}
          className="section" id="About-Me" >
           <About isVisible={aboutIntersecting} />
         </motion.div></AnimatePresence>
         <AnimatePresence exitBeforeEnter><motion.div
          initial={{opacity: 0 ,}}
-        animate={{opacity: projectsIntersecting ? 1 : (screen.width < 1030 ? 1 : 0)}}
+        animate={{opacity: projectsIntersecting ? 1 : 0}}
          exit={{ opacity: 0 }}
          transition={{  duration: screen.width < 1030 ? 1 : 0.2  , ease: 'easeInOut' }}
          className="section" id="Projects" >
@@ -270,7 +265,7 @@ observer.observe(sectionOne);
         </motion.div></AnimatePresence>
         <AnimatePresence exitBeforeEnter><motion.div
         initial={{opacity: 0}}
-        animate={{opacity: contactIntersecting ? 1 : (screen.width < 1030 ? 1 : 0)}}
+        animate={{opacity: contactIntersecting ? 1 : 0}}
          exit={{ opacity: 0 }}
          transition={{ duration: screen.width < 1030 ? 1 : 0.1  , ease: 'easeInOut'}}
          className="section" id="Contact-Me">
