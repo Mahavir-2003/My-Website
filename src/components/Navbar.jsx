@@ -19,7 +19,6 @@ function NavBar() {
   const [projectsIntersecting , setProjectsIntersecting] = useState(false);
   const [contactIntersecting , setContactIntersecting] = useState(false);
 
-console.log(aboutIntersecting);
 
   window.addEventListener("load", () => {
     const sectionOne = document.querySelector('#About-Me');
