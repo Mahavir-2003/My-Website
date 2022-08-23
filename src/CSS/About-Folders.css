@@ -1,0 +1,83 @@
+.about-folders-container{
+    width: 100% !important;
+    margin-top: 10px;
+    height: calc(100% - 10px) !important;
+    display : flex ;
+    align-items: center;
+    justify-content : flex-start ;
+    flex-direction: column;
+    position: relative;
+}
+
+.about-folders{
+    width: 100% !important;
+    height: auto !important;
+   display: flex;
+    align-items: flex-start;
+    justify-content : flex-start;
+    flex-direction: column;
+    color: var(--text);
+    border: none !important;
+}
+
+.folder-name{
+    width: 100% !important;
+    height: 30px !important;
+    font-size: 16px;
+    display: flex;
+    align-items: center !important;
+    justify-content : flex-start;
+    flex-direction: row !important;
+    border: none !important;
+    box-sizing: content-box !important;
+}
+
+.folder-name:hover{
+    cursor: pointer;
+    color: var(--white) !important;
+}
+
+.folder-name i{
+    margin-left: 5px;
+}
+
+.folder-name p{
+    margin-left: 5px;
+}
+
+.sub-folders{
+    display: none !important;
+    align-items: center;
+    justify-content : center;
+    flex-direction: column !important;
+    width: 100% !important;
+}
+
+.white{
+    color: var(--white) !important;
+}
+
+.sub-folders-visible{
+    display: flex !important;
+}
+
+.sub-folders p{
+    margin-left: 10%;
+    width: 90% !important;
+    height: 30px !important;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content : flex-start;
+}
+.sub-folders p:hover{
+    cursor: pointer;
+}
+
+.sub-folders p i{
+    margin-left: 5px;
+}
+
+.sub-folders p span{
+    margin-left: 5px;
+}

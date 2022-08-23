@@ -1,0 +1,40 @@
+.Menu-container{
+    transform: translateX(-100%);
+    background-color: var(--background);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    transition: all 0.4s ease; 
+}
+
+.menu-active{
+    transform: translateX(0);
+}
+
+.Menu-container li{
+    list-style: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    border-bottom: 1px solid var(--lines);
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+.Menu-container li:hover{
+    cursor: pointer;
+    border-bottom: 3px solid var(--yellow) !important;
+}
+
+.Menu-li-active p a{
+    color: var(--white) !important;
+}
+
+.Menu-li-active {
+    border-bottom: 3px solid var(--yellow) !important;
+}
