@@ -28,6 +28,9 @@ const options = { threshold: screen.width > 1030 ? 1 : 0.3};
 const observer = new IntersectionObserver(function
  (entries, observer){
     entries.forEach(entry => {
+      if(screen.width < 1030){
+        setAboutIntersecting(true);
+      }
       if(entry.isIntersecting){
         setAboutIntersecting(true);
       }
@@ -45,6 +48,9 @@ observer.observe(sectionOne);
 const observer = new IntersectionObserver(function
  (entries, observer){
     entries.forEach(entry => {
+      if(screen.width < 1030){
+        setProjectsIntersecting(true);
+      }
       if(entry.isIntersecting){
         setProjectsIntersecting(true);
       }
@@ -62,6 +68,9 @@ observer.observe(sectionOne);
 const observer = new IntersectionObserver(function
  (entries, observer){
     entries.forEach(entry => {
+      if(screen.width < 1030){
+        setContactIntersecting(true);
+      }
       if(entry.isIntersecting){
         setContactIntersecting(true);
       }
