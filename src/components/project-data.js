@@ -13,7 +13,7 @@ const ProjectsData = [{
 },
 {
     name: "haabattery",
-    img: "https://scontent.famd6-1.fna.fbcdn.net/v/t39.30808-6/289102630_1691256521253079_2976442492007496421_n.jpg?stp=dst-jpg_p843x403&_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=P2hv4R8iN2cAX_nwkyj&_nc_ht=scontent.famd6-1.fna&oh=00_AT_U5nZn-bdMbbAuEpnL-wy_P_zJ0Bjz81draqK0LzY1mA&oe=6308374B",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmlUSPo509s-buQtSeTiVa2y7ZvegknLt-8g&usqp=CAU",
     projectInfo: "A commercial buisness website for marketing...",
     projectLink: "http://www.haabattery.com/"
 },
