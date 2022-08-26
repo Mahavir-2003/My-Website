@@ -254,7 +254,7 @@ observer.observe(sectionOne);
         </div>
         <AnimatePresence exitBeforeEnter><motion.div
         initial={{opacity: 1 }}
-        animate={{opacity: aboutIntersecting ? 1 : (screen.width < 1030 ? 1 : 0) }}
+        animate={{opacity: aboutIntersecting ? 1 : (screen.width < 1500 ? 1 : 0) }}
          exit={{ opacity: 1 }}
          transition={{ duration: screen.width < 1030 ? 1 : 0.1 , ease: 'easeInOut'}}
          className="section" id="About-Me" >
@@ -262,7 +262,7 @@ observer.observe(sectionOne);
         </motion.div></AnimatePresence>
         <AnimatePresence exitBeforeEnter><motion.div
          initial={{opacity: 0 ,}}
-        animate={{opacity: projectsIntersecting ? 1 : (screen.width < 1030 ? 1 : 0)}}
+        animate={{opacity: projectsIntersecting ? 1 : (screen.width < 1500 ? 1 : 0)}}
          exit={{ opacity: 0 }}
          transition={{  duration: screen.width < 1030 ? 1 : 0.2  , ease: 'easeInOut' }}
          className="section" id="Projects" >
@@ -270,7 +270,7 @@ observer.observe(sectionOne);
         </motion.div></AnimatePresence>
         <AnimatePresence exitBeforeEnter><motion.div
         initial={{opacity: 0}}
-        animate={{opacity: contactIntersecting ? 1 : (screen.width < 1030 ? 1 : 0)}}
+        animate={{opacity: contactIntersecting ? 1 : (screen.width < 1500 ? 1 : 0)}}
          exit={{ opacity: 0 }}
          transition={{ duration: screen.width < 1030 ? 1 : 0.1  , ease: 'easeInOut'}}
          className="section" id="Contact-Me">
